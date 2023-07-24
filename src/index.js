@@ -1,1 +1,3 @@
-let a = alert('running');
+import { initialise } from './modules/app'
+
+initialise();
