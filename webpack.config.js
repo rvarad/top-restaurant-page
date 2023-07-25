@@ -1,15 +1,20 @@
 const path = require('path');
-// const HtmlWebpackPlugin = require('html-webpack-plugin');
-const FaviconsWebpackPlugin  = require('favicons-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     entry: './src/index.js',
     plugins: [
-        new FaviconsWebpackPlugin('./src/assets/favicon/pizza.png')
+        new HtmlWebpackPlugin(
+            {
+                template: "./src/index.html",
+                favicon: "./src/assets/favicon/pizza.png"
+            }
+        )
     ],
     output: {
         filename: 'main.js',
         path: path.resolve(__dirname, 'dist'),
+        clean: true,
     },
     module: {
         rules: [
@@ -19,7 +24,14 @@ module.exports = {
             },
             {
                 test: /\.(png|svg|jpg|jpeg|gif)$/i,
-                type: 'asset/resource',
+                use: {
+                    loader: 'file-loader',
+                    options: {
+                        esModule: false,
+                        name: "[name].[hash].[ext]",
+                        outputPath: "images"
+                    }
+                },
             },
         ],
     },

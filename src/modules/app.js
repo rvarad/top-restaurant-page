@@ -1,22 +1,10 @@
 import "../assets/styles/style.css";
-// import favicon from "../assets/favicon/favicon.ico";
 import { images } from "./imagesrc";
 import { loadHomeTab } from "./homeTab";
 import { loadMenuTab } from "./menuTab";
 import { loadContactTab } from "./contactTab";
 
 let activeTab = 'homeTab';
-
-// const createFavicon = () => {
-//     let head = document.querySelector('head');
-    
-//     let link = document.createElement('link');
-//     link.rel = 'shortcut icon';
-//     link.type = 'image/x-icon';
-//     link.href = favicon;
-
-//     head.appendChild(link);
-// }
 
 const createHeader = () => {
     const header = document.createElement('header');
