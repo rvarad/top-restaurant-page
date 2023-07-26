@@ -91,7 +91,7 @@ const createFooter = () => {
 
     const credits = document.createElement('span');
     credits.classList.add('credits');
-    credits.innerHTML = 'Brought to you by : <a href="https://github.com/rvarad" target="_blank">rvarad</a> | <a href="https://github.com/rvarad/top-library" target="_blank">Source</a>';
+    credits.innerHTML = 'Brought to you by : <a href="https://github.com/rvarad" target="_blank">rvarad</a> | <a href="https://github.com/rvarad/top-restaurant-page" target="_blank">Source</a>';
 
     footer.appendChild(credits);
 
