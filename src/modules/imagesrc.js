@@ -12,7 +12,7 @@ import chickenWings from '../assets/images/menu/chickenWings.jpeg';
 import chickenTenders from '../assets/images/menu/chickenTenders.jpeg';
 import houseSalad from '../assets/images/menu/houseSalad.jpeg';
 import caesarSalad from '../assets/images/menu/caesarSalad.jpeg';
-import location from '../assets/images/contact/Screenshot from 2023-07-19 22-05-41.png';
+import location from '../assets/images/contact/locationMap.png';
 
 export const images = {
     'home' : {
